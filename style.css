@@ -47,6 +47,11 @@ body {
     margin-top: 0;
     list-style-type: none;
     padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #2857a4;
 }
 
 .nav-list li {
@@ -58,10 +63,12 @@ body {
 }
 .nav-list li a {
     color: white;
+    font-size: 20px;
     text-decoration: none;
 }
 .nav-list li a:hover {
     color: lightgray;
+    text-decoration: none;
 }
 /* only for nam-menu */
 .nav-menu li a {
@@ -418,14 +425,18 @@ img {
     justify-content: space-around;
     padding: 0 50px;
     margin-bottom: 20px;
+    
 }
-
+.portfolio-container:hover{
+    
+}
 
 .portfolio-img {
     max-width: 300px;
     margin: 20px;
     overflow: hidden;
     position: relative;
+    transition: 1s;
 }
 .portfolio-img img {
     height: 100%;
@@ -433,11 +444,12 @@ img {
 }
 .portfolio-img:hover {
     box-shadow: 0 0 20px #74ADC8;
+    transform: scale(1.2);
 }
 
 .portfolio-img:hover .portfolio-details {
-    background-color: #80808078;
-    color: white;
+    background-color: #333333b9;
+    color: #fff;
 }
 
 .portfolio-details {
@@ -446,10 +458,13 @@ img {
     top: 0;
     left: 0;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 10px;
     color: transparent;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
